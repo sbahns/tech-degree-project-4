@@ -6,7 +6,10 @@
 [class^="btn--"] {
 	@extend %center-align;
   @extend %btn;
-  margin-bottom: em(20px, 14px);
+  margin-bottom: em(22px, 14px);
+	&:first-of-type {
+		margin-top: em(25px, 14px);
+	}
   @include media-q(small) {
   	width: 100%;
   }
@@ -15,7 +18,6 @@
     display: inline-block;
     @include doubly(20px);
   }
-
 }
 
 .theme__colors {

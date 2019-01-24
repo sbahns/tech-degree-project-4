@@ -1,23 +1,25 @@
 //Forms:
-.form__ {
-	&label {
+.form {
+	&__label {
 		&--hidden {
 			display: none;
 		}
 	}
-	&input {
-    padding: 10px 10px;
-    width: 100%;
+	&__input {
+		display: block;
+    padding: 20px 10px 10px;
+    width: 93%;
     font-size: 16px;
     font-weight: normal;
     border: none;
     border-bottom: 6px solid $sea-green;
-    margin: 14px 0;
+    margin: 15px auto 10px;
 	}
 
 }
 
 .form {
+	padding-bottom: 8px;
 	[class^="btn--"] {
 		@extend %btn;
 		margin-top: em(13px, 14px);

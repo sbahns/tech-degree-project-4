@@ -13,6 +13,7 @@
 		width: 80%;
 	}
 	@include media-q(large) {
+		width: 70%;
 		max-width: $container-max-width;
 	}
 }
@@ -20,6 +21,8 @@
 .card {
 	margin-top: 20px;
 	margin-bottom: 60px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .grid__col {
@@ -50,21 +53,21 @@
 }
 
 .grid__row {
+	margin-top: 20px;
 	margin-bottom: 20px;
-
 }
 
 .grid__col {
 	&--3 {
 		&.theme__colors {
 			@extend %rounded_col;
-			background-color: lighten($purple, 20);
+			background-color: $lavender;
 		}
 	}
 	&--4 {
 		&.theme__colors {
 			@extend %rounded_col;
-			background-color: $cyan;
+			background-color: lighten($cyan, 10);
 		}
 	}
 	&--5 {
@@ -82,7 +85,7 @@
 	&--7 {
 		&.theme__colors {
 			@extend %rounded_col;
-			background-color: $red;
+			background-color: $pink;
 		}
 		&.centered {
 			@extend .centered;
@@ -91,13 +94,13 @@
 	&--8 {
 		&.theme__colors {
 			@extend %rounded_col;
-			background-color: $orange;
+			background-color: lighten($orange, 8);
 		}
 	}
 	&--12 {
 		&.theme__colors {
 			@extend %rounded_col;
-			background-color: $sea-green;
+			background-color: lighten($sea-green, 5);
 		}
 	}
 }

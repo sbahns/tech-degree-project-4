@@ -1,0 +1,26 @@
+//Forms:
+.form__ {
+	&label {
+		&--hidden {
+			display: none;
+		}
+	}
+	&input {
+    padding: 10px 10px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: normal;
+    border: none;
+    border-bottom: 6px solid $sea-green;
+    margin: 14px 0;
+	}
+
+}
+
+.form {
+	[class^="btn--"] {
+		@extend %btn;
+		margin-top: em(13px, 14px);
+	  margin-bottom: em(13px, 14px);
+	}
+}

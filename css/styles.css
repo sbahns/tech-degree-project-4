@@ -1,4 +1,48 @@
 /*--------------------------------------------------
+:: Utility styles
+-------------------------------------------------- */
+/*--------------------------------------------------
+:: Variables
+-------------------------------------------------- */
+/*--------------------------------------------------
+:: Variables
+-------------------------------------------------- */
+/*--------------------------------------------------
+:: Extends
+-------------------------------------------------- */
+[class^="btn--"], .form [class^="btn--"] {
+  width: 100%;
+  padding: 10px 45px;
+  border: 0;
+  border-radius: 5px;
+  color: #ffffff;
+  text-transform: uppercase; }
+
+[class^="btn--"] {
+  text-align: center; }
+
+.grid__col--3.theme__colors, .grid__col--4.theme__colors, .grid__col--5.theme__colors, .grid__col--6.theme__colors, .grid__col--7.theme__colors, .grid__col--8.theme__colors, .grid__col--12.theme__colors {
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 6px; }
+  @media (min-width: breakpoint(medium)) {
+    .grid__col--3.theme__colors, .grid__col--4.theme__colors, .grid__col--5.theme__colors, .grid__col--6.theme__colors, .grid__col--7.theme__colors, .grid__col--8.theme__colors, .grid__col--12.theme__colors {
+      text-align: center; } }
+
+.centered, .grid__col--7.centered {
+  float: none  !important;
+  margin: 0 auto; }
+
+/*--------------------------------------------------
+:: Mixins
+-------------------------------------------------- */
+/*--------------------------------------------------
+:: Functions
+-------------------------------------------------- */
+/*--------------------------------------------------
+:: Functions
+-------------------------------------------------- */
+/*--------------------------------------------------
 :: Base Styles
 -------------------------------------------------- */
 /*--------------------------------------------------
@@ -380,39 +424,10 @@ ul {
   padding-left: 0; }
 
 /*--------------------------------------------------
-:: Utility styles
--------------------------------------------------- */
-/*--------------------------------------------------
-:: Variables
--------------------------------------------------- */
-[class^="btn--"], .form [class^="btn--"] {
-  width: 100%;
-  padding: 10px 45px;
-  border: 0;
-  border-radius: 5px;
-  color: #ffffff;
-  text-transform: uppercase; }
-
-[class^="btn--"] {
-  text-align: center; }
-
-.grid__col--3.theme__colors, .grid__col--4.theme__colors, .grid__col--5.theme__colors, .grid__col--6.theme__colors, .grid__col--7.theme__colors, .grid__col--8.theme__colors, .grid__col--12.theme__colors {
-  padding: 10px 20px;
-  border-radius: 5px;
-  margin-bottom: 6px; }
-  @media (min-width: breakpoint(medium)) {
-    .grid__col--3.theme__colors, .grid__col--4.theme__colors, .grid__col--5.theme__colors, .grid__col--6.theme__colors, .grid__col--7.theme__colors, .grid__col--8.theme__colors, .grid__col--12.theme__colors {
-      text-align: center; } }
-
-.centered, .grid__col--7.centered {
-  float: none  !important;
-  margin: 0 auto; }
-
-/*--------------------------------------------------
-:: Functions
--------------------------------------------------- */
-/*--------------------------------------------------
 :: Component styles
+-------------------------------------------------- */
+/*--------------------------------------------------
+:: Grid Styles
 -------------------------------------------------- */
 /*--------------------------------------------------
 :: Grid
@@ -503,6 +518,9 @@ ul {
 .grid__col--12.theme__colors {
   background-color: #6ee5c9; }
 
+/*--------------------------------------------------
+:: Typography styles
+-------------------------------------------------- */
 .container {
   font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
   color: #808080;
@@ -537,6 +555,9 @@ ul {
   font-weight: 300;
   margin: 20px 0; }
 
+/*--------------------------------------------------
+:: Navigation styles
+-------------------------------------------------- */
 .nav {
   text-align: center;
   margin-top: 45px;
@@ -567,6 +588,9 @@ ul {
         float: left;
         margin-left: 20px; } }
 
+/*--------------------------------------------------
+:: Image styles
+-------------------------------------------------- */
 .img, .img--logo, .img--frame, .img--avatar {
   width: 100%;
   height: auto;
@@ -587,6 +611,9 @@ ul {
     max-width: 200px;
     margin: 5px auto; }
 
+/*--------------------------------------------------
+:: Button styles
+-------------------------------------------------- */
 .btn--primary {
   background-color: #808080; }
 .btn--secondary {
@@ -620,6 +647,9 @@ ul {
   font-size: 0.88889em;
   font-weight: 600; }
 
+/*--------------------------------------------------
+:: Form styles
+-------------------------------------------------- */
 .form__label--hidden {
   display: none; }
 .form__input {
